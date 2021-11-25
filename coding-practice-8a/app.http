@@ -1,0 +1,30 @@
+###
+
+http://localhost:3000/todos/?search_q=JS
+
+
+###
+http://localhost:3000/todos/1/
+###
+
+post http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 9,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+
+###
+
+put http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{
+    "priority": "High"
+}
+
+###
+DELETE http://localhost:3000/todos/1/
